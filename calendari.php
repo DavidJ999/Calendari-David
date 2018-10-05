@@ -1,4 +1,5 @@
 <?php
+//creo les variables nescessaries i l'array de mesos
 $mes=date("n");
 $anys=date("Y");
 $diaActual=date("j");
@@ -17,6 +18,8 @@ $mesos=array(1=>"Gener", "Febrer", "Març", "Abril", "Maig", "Junt", "Juliol",
 </head>
  
 <body>
+	//dintre creo la taula amb els dies a dalt i abaix tota la taula de posicions dels dia o també tinc amb compte quin 
+	//es el primer dia i l'ultim per sapiguer fins quina poscició emplena(utilitzo com ajuda per hubicarme el modul de 7 per cada setmana)
 <table id="calendar">
 	<caption><?php echo $mesos[$mes]." ".$anys?></caption>
 	<tr>
